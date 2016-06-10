@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <style media="screen">
+      table {
+        border-collapse: collapse;
+        margin:0 auto;
+        margin-top:15%;
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        font-weight:700;
+      }
+
+      button#zero {
+        width:82px;
+      }
+
+      input {
+        height:30px;
+        line-height:30px;
+        width:98%;
+        text-align:right;
+      }
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" id="display" value="0" readonly></input>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="sqrt">√</button>
+        </td>
+        <td>
+          <button id="square">x<sup>2</sup></button>
+        </td>
+        <td>
+          <button id="reset">C</button>
+        </td>
+        <td>
+          <button id="multiply">*</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button id="seven" value="7">7</button>
+        </td>
+        <td>
+            <button id="eight" value="8">8</button>
+        </td>
+        <td>
+            <button id="nine" value="9">9</button>
+        </td>
+        <td>
+            <button id="plus">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="four" value="4">4</button>
+        </td>
+        <td>
+          <button id="five" value="5">5</button>
+        </td>
+        <td>
+          <button id="six" value="6">6</button>
+        </td>
+        <td>
+          <button id="minus">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="one" value="1">1</button>
+        </td>
+        <td>
+          <button id="two" value="2">2</button>
+        </td>
+        <td>
+          <button id="three" value="3">3</button>
+        </td>
+        <td>
+          <button id="divide">/</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button id="zero" value="0">0</button>
+        </td>
+        <td>
+          <button id="point">.</button>
+        </td>
+        <td>
+          <button id="equal">=</button>
+        </td>
+      </tr>
+    </table>
+
+    <script src="./calculator.js" charset="utf-8"></script>
+  </body>
+</html>
